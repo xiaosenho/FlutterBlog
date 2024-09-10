@@ -29,7 +29,7 @@ class Net {
       connectTimeout: Duration(milliseconds: 60 * 1000), // 连接服务器超时时间，单位是毫秒.
       receiveTimeout: Duration(milliseconds: 60 * 1000), // 响应流上前后两次接受到数据的间隔，单位为毫秒, 这并不是接收数据的总时限.
     ));
-    dio.options.baseUrl="http://122.51.76.116:8081";
+    dio.options.baseUrl="http://106.54.193.108:8081";
   }
 
   // 单例模式
