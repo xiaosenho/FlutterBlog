@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.example.blogserver.mapper.CollectsMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="org.example.blogserver.entity.Collects">
+        <id column="collectId" property="collectId" />
+        <result column="created_at" property="createdAt" />
+        <result column="update_at" property="updateAt" />
+        <result column="articleId" property="articleId" />
+        <result column="userId" property="userId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        collectId, created_at, update_at, articleId, userId
+    </sql>
+
+</mapper>
